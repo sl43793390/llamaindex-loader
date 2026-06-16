@@ -461,7 +461,3 @@ By default `tag="section"` and `ignore_no_id=False` will drop nodes without an i
 The new `llama-index-readers-json` renamed the parameter to `levels_back`. `load_json` is aligned; do not pass the old name manually.
 
 ---
-
-## 9. License
-
-For learning and internal use only.
