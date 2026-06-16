@@ -1,0 +1,36 @@
+"""dataLoader 模块:统一对外暴露文档解析方法"""
+from .loaders import (
+    SUPPORTED_EXTS,
+    load_word,
+    load_excel,
+    load_txt,
+    load_pdf,
+    load_pdf_pymupdf,
+    load_pdf_plumber,
+    load_pdf_auto,
+    load_markdown,
+    load_html,
+    load_json,
+    load_web,
+    auto_load,
+    load_directory,
+    list_supported_files,
+)
+
+__all__ = [
+    "SUPPORTED_EXTS",
+    "load_word",
+    "load_excel",
+    "load_txt",
+    "load_pdf",
+    "load_pdf_pymupdf",
+    "load_pdf_plumber",
+    "load_pdf_auto",
+    "load_markdown",
+    "load_html",
+    "load_json",
+    "load_web",
+    "auto_load",
+    "load_directory",
+    "list_supported_files",
+]

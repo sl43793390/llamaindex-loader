@@ -1,0 +1,32 @@
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+*.egg-info/
+.eggs/
+build/
+dist/
+.venv/
+venv/
+env/
+.env
+
+# IDE
+.idea/
+.vscode/
+*.swp
+.DS_Store
+
+# App
+data/*.db
+data/*.sqlite
+data/*.sqlite3
+logs/*.log
+logs/*.log.*
+backups/
+
+# Secrets
+config/.key
+config/*.key
