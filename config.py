@@ -36,7 +36,7 @@ class EmbeddingConfig:
     #: API Key。
     api_key: str = field(default_factory=lambda: _env("OPENAI_API_KEY", "sk-xxxxxx"))
     #: API Base URL(支持任意 OpenAI 兼容服务,如 dmxapi / DeepSeek / 通义等)。
-    api_base: str = field(default_factory=lambda: _env("OPENAI_BASE_URL", "https://www.dmxapi.cn/v1"))
+    api_base: str = field(default_factory=lambda: _env("OPENAI_BASE_URL", "https://www.example.cn/v1"))
     #: Embedding 维度(Milvus 建表需要,需与所选模型匹配)。
     dim: int = field(default_factory=lambda: int(_env("EMBED_DIM", "1536")))
 
@@ -50,7 +50,7 @@ class LLMConfig:
     #: API Key。
     api_key: str = field(default_factory=lambda: _env("OPENAI_API_KEY", "sk-xxxxxx"))
     #: API Base URL。
-    api_base: str = field(default_factory=lambda: _env("OPENAI_BASE_URL", "https://www.dmxapi.cn/v1"))
+    api_base: str = field(default_factory=lambda: _env("OPENAI_BASE_URL", "https://www.example.cn/v1"))
     #: 采样温度,越低越确定。
     temperature: float = 0.2
     #: 单次生成最大 token 数。
